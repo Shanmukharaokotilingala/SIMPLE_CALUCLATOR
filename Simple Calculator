@@ -1,0 +1,20 @@
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+ request = int(input("Enter your choice (1-4): "))
+if request == 1:
+    print("Result:", a + b)
+elif  request == 2:
+    print("Result:", a - b)
+elif  request == 3:
+    print("Result:", a * b)
+elif  request == 4:
+    if b != 0:
+        print("Result:", a / b)
+    else:
+        print("Division not possible")
+else:
+    print("Invalid choice")
